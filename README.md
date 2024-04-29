@@ -26,7 +26,7 @@ Publish the website in the given URL.
 
 ## PROGRAM :
 ## calc.html
-calc.html
+```
 <html>
 <head>
  <meta charset="UTF-8">
@@ -83,9 +83,10 @@ calc.html
     <script src="index.js"></script>
 </body>
 </html>
+```
 
 ## index.js
-index.js
+```
 const display = document.querySelector(".display");
 const buttons = document.querySelectorAll("button");
 const specialChars = ["%", "*", "/", "-", "+", "="];
@@ -109,8 +110,9 @@ const calculate = (btnValue) => {
 buttons.forEach((button) => {
   button.addEventListener("click", (e) => calculate(e.target.dataset.value));
 });
+```
 ## style.css
-style.css
+```
 body{
     width:95%;
     height:90vh;
@@ -189,6 +191,7 @@ body{
   form input.operator{
     color:#d12738;
   }
+  ```
 
 ## OUTPUT:
 ![alt text](<Screenshot 2024-04-29 134507.png>)
